@@ -1,10 +1,15 @@
 @charset "utf-8";
 
 /*
- * settings new
+ * settings
  */
 
-// 追加
+// 幅
+$xsmall: 320px;
+$small: 640px;
+$medium: 768px;
+$large: 1024px;
+$xlarge: 1280px;
 
 // fontSize
 $fontXXS: 10px;
@@ -70,23 +75,23 @@ $colorHatena: #00a4de;
 // ブレイクポイント
 @mixin bp($breakpoint: medium) {
   @if $breakpoint == xsmall {
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: $xsmall) {
       @content;
     }
   } @else if $breakpoint == small {
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: $small) {
       @content;
     }
   } @else if $breakpoint == medium {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $medium) {
       @content;
     }
   } @else if $breakpoint == large {
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: $large) {
       @content;
     }
   } @else if $breakpoint == xlarge {
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: $xlarge) {
       @content;
     }
   }
