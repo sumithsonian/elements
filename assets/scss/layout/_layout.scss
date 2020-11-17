@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* body */
+
+body {
+
+}
+
+/* platform */
+
+.platform {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+/* container */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+
+  &--narrow {
+    max-width: 900px;
+  }
+}
+
+/* mainContents */
+
+.mainContents {
+  position: relative;
+  flex: 1;
+}

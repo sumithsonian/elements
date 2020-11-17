@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------
+**
+** zindex
+**
+** ------------------------------------------------------------ */
+.item-pulldown ul {
+  z-index: 100;
+}
+
+.item-votes {
+  z-index: 1000;
+}
+
+.sticky-header-small {
+  z-index: 1500;
+}
+
+.brick-shares {
+  z-index: 2000;
+}
+
+.global {
+  z-index: 2100;
+}
+
+.popup,
+.tooltip {
+  z-index: 3000;
+}
+
+.floatingActionBtns,
+.fixedShares {
+  z-index: 3500;
+}
+.fixedNav {
+  z-index: 3501;
+}
+
+.overlay {
+  z-index: 4000;
+}
+
+.dialog,
+.floating {
+  z-index: 5000;
+}
+
+.message {
+  z-index: 6000;
+}
+
+.popup.is-onDialog,
+.tooltip.is-onDialog {
+  z-index: 5001;
+}

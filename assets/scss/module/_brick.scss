@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* brick */
+
+.brick {
+  margin: $margin * 2 $margin;
+  padding: $margin;
+  background: $colorKey;
+  border-radius: $radius;
+
+  @media #{$bpSmall} {
+    margin: $margin - 1px 0;
+    padding: 1px 0;
+    border-radius: 0;
+  }
+}
+
+@media #{$bpMediumOver} {
+  .row .brick {
+    margin: $margin $margin;
+  }
+}
+
+@media #{$bpMediumUnder} {
+  .row > [class^='col'] + [class^='col'] > .brick {
+    margin-top: 0;
+  }
+}
