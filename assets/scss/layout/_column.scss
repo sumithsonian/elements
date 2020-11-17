@@ -103,7 +103,7 @@
 .col9of10 {
   width: 90%;
 }
-@media #{$bpMediumUnder} {
+@include bp(small) {
   .row:not(.row-small) {
     .col1of3,
     .col2of3,
@@ -125,7 +125,7 @@
     }
   }
 }
-@media #{$bpSmall} {
+@include bp(small) {
   .row:not(.row-small) {
     .col1of3,
     .col2of3,

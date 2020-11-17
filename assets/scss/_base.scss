@@ -1,4 +1,4 @@
- @charset "utf-8";
+@charset "utf-8";
 /*
  * KUZIRA CSS Framework
  * version: 1.1.1
@@ -8,9 +8,11 @@
  *
  * Date: 2010-10-26
  */
- 
+
 /* ------------------------------------------------------------ normalize */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 html,
 body,
 div,
@@ -66,7 +68,13 @@ time,
 mark,
 audio,
 video,
-button { margin: 0; padding: 0; outline: 0; font-style: normal; font-weight: 600; }
+button {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-style: normal;
+  font-weight: 600;
+}
 article,
 aside,
 dialog,
@@ -75,23 +83,45 @@ footer,
 header,
 hgroup,
 nav,
-section { display: block; }
+section {
+  display: block;
+}
 ol li,
-ul li { list-style: none; }
-table { border-collapse: collapse; border-spacing: 0; }
+ul li {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 blockquote,
-q { quotes: none; }
+q {
+  quotes: none;
+}
 a,
 img,
-fieldset { border: 0; }
+fieldset {
+  border: 0;
+}
 img,
 input,
-textarea { vertical-align: middle; }
+textarea {
+  vertical-align: middle;
+}
 input[type='text'],
-textarea { line-height: 1.4; }
+textarea {
+  line-height: 1.4;
+}
 input,
-button { outline: none; }
-button { border: none; background: none; padding: 0; margin: 0; }
+button {
+  outline: none;
+}
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
 h1,
 h2,
 h3,
@@ -107,7 +137,10 @@ td,
 pre,
 caption,
 address,
-button { line-height: 1.6; font-size: $size14; }
+button {
+  line-height: 1.6;
+  font-size: $font;
+}
 p input,
 p select,
 p textarea,
@@ -138,25 +171,45 @@ td dt,
 td dd,
 td input,
 td select,
-td textarea { font-size: 100%; }
+td textarea {
+  font-size: 100%;
+}
 /* font */
-body { font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; font-size: 10px; }
+body {
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ',
+    Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 10px;
+}
 a:link,
-a:visited { text-decoration: none; }
+a:visited {
+  text-decoration: none;
+}
 a:hover,
-a:active { text-decoration: underline; }
-@media #{$bpMediumUnder} {
-a:hover,
-a:active { text-decoration: none; }
+a:active {
+  text-decoration: underline;
+}
+@include bp(small) {
+  a:hover,
+  a:active {
+    text-decoration: none;
+  }
 }
 
 // placeholder
-input,textarea {
-    &::-webkit-input-placeholder { color: #CCC; }
-    &:-ms-input-placeholder { color: #CCC; }
-    &::-ms-input-placeholder { color: #CCC; }
-    &::placeholder { color: #CCC; }
+input,
+textarea {
+  &::-webkit-input-placeholder {
+    color: #ccc;
+  }
+  &:-ms-input-placeholder {
+    color: #ccc;
+  }
+  &::-ms-input-placeholder {
+    color: #ccc;
+  }
+  &::placeholder {
+    color: #ccc;
+  }
 }
-
 
 /* EOF */
