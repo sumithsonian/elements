@@ -1,27 +1,11 @@
 @charset "utf-8";
 
-/* ------------------------------------------------------------
-**
-** zindex
-**
-** ------------------------------------------------------------ */
-.item-pulldown ul {
+// zindex
+.pulldown {
   z-index: 100;
 }
 
-.item-votes {
-  z-index: 1000;
-}
-
-.sticky-header-small {
-  z-index: 1500;
-}
-
-.brick-shares {
-  z-index: 2000;
-}
-
-.global {
+.globalHeader {
   z-index: 2100;
 }
 
@@ -30,28 +14,14 @@
   z-index: 3000;
 }
 
-.floatingActionBtns,
-.fixedShares {
-  z-index: 3500;
-}
-.fixedNav {
-  z-index: 3501;
-}
-
 .overlay {
   z-index: 4000;
 }
 
-.dialog,
-.floating {
+.dialog {
   z-index: 5000;
 }
 
 .message {
   z-index: 6000;
-}
-
-.popup.is-onDialog,
-.tooltip.is-onDialog {
-  z-index: 5001;
 }

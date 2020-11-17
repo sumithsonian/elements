@@ -1,13 +1,11 @@
 @charset "utf-8";
 
 /* body */
-
 body {
-
+  //
 }
 
 /* platform */
-
 .platform {
   min-width: 320px;
   display: flex;
@@ -17,19 +15,18 @@ body {
 }
 
 /* container */
-
 .container {
   margin: 0 auto;
   max-width: 1200px;
   position: relative;
 
   &--narrow {
+    @extend .container;
     max-width: 900px;
   }
 }
 
 /* mainContents */
-
 .mainContents {
   position: relative;
   flex: 1;

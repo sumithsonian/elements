@@ -1,27 +1,23 @@
 @charset "utf-8";
 
-/* brick */
-
+// brick
 .brick {
   margin: $space * 2 $space;
   padding: $space;
   border-radius: $radius;
 
-  @include bp(sp) {
+  @include bp(small) {
     margin: $space - 1px 0;
     padding: 1px 0;
     border-radius: 0;
   }
 }
 
-@include bp(sp) {
-  .row .brick {
-    margin: $space $space;
+@include bp(small) {
+  .brick {
+    margin: $space;
   }
-}
-
-@include bp(sp) {
-  .row > [class^='col'] + [class^='col'] > .brick {
+  [class^='col'] + [class^='col'] > .brick {
     margin-top: 0;
   }
 }
