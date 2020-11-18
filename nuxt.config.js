@@ -17,7 +17,19 @@ export default {
   plugins: [],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
-  components: true,
+  components: {
+    dirs: [
+      '~/components/',
+      {
+        path: '~/components/elements/',
+        prefix: 'elements',
+      },
+      {
+        path: '~/components/blocks/',
+        prefix: 'blocks',
+      },
+    ],
+  },
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
