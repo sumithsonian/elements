@@ -1,7 +1,7 @@
 <template>
-  <footer class="globalHeader">
+  <header class="globalHeader">
     <div class="container">
       <p>header</p>
     </div>
-  </footer>
+  </header>
 </template>
