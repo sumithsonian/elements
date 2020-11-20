@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link to="/" :class="btnClass"><slot /></nuxt-link>
+  <nuxt-link to="/" :class="className"><slot /></nuxt-link>
 </template>
 
 <script>
@@ -9,20 +9,8 @@ export default {
     sharp: { type: String, default: '' },
   },
   computed: {
-    btnClass() {
-      if (this.size === '' && this.sharp === 'block') {
-        return 'btn--block'
-      } else if (this.size === 'small' && this.sharp === 'block') {
-        return 'btn--blockSmall'
-      } else if (this.size === 'large' && this.sharp === 'block') {
-        return 'btn--blockLarge'
-      } else if (this.size === 'small' && this.sharp === '') {
-        return 'btn--small'
-      } else if (this.size === 'large' && this.sharp === '') {
-        return 'btn--large'
-      } else {
-        return 'btn'
-      }
+    className() {
+      return this.$toBem('btn', null, [this.sharp, this.size])
     },
   },
 }

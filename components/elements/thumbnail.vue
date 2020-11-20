@@ -1,5 +1,5 @@
 <template>
-  <img :src="src" :alt="alt" :class="imgClass" />
+  <img :src="src" :alt="alt" :class="className" />
 </template>
 
 <script>
@@ -11,20 +11,8 @@ export default {
     sharp: { type: String, default: '' },
   },
   computed: {
-    imgClass() {
-      if (this.size === '' && this.sharp === 'circle') {
-        return 'thumbnail--circle'
-      } else if (this.size === 'small' && this.sharp === 'circle') {
-        return 'thumbnail--circleSmall'
-      } else if (this.size === 'large' && this.sharp === 'circle') {
-        return 'thumbnail--circleLarge'
-      } else if (this.size === 'small' && this.sharp === '') {
-        return 'thumbnail--small'
-      } else if (this.size === 'large' && this.sharp === '') {
-        return 'thumbnail--large'
-      } else {
-        return 'thumbnail'
-      }
+    className() {
+      return this.$toBem('thumbnail', null, [this.sharp, this.size])
     },
   },
 }
