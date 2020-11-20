@@ -1,9 +1,9 @@
 <template>
   <div class="platform">
-    <GlobalHeader />
+    <GlobalHeader><p>Header</p></GlobalHeader>
     <main class="mainContents">
       <nuxt />
     </main>
-    <GlobalFooter />
+    <GlobalFooter><p>Footer</p></GlobalFooter>
   </div>
 </template>

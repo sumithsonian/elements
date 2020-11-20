@@ -1,7 +1,7 @@
 <template>
   <header class="globalHeader">
     <div class="container">
-      <p>header</p>
+      <slot />
     </div>
   </header>
 </template>
