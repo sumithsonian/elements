@@ -1,5 +1,5 @@
 <template>
-  <compnent :is="tagName" :class="headingClass"><slot /></compnent>
+  <compnent :is="tagName" :class="className"><slot /></compnent>
 </template>
 
 <script>
@@ -8,7 +8,7 @@ export default {
     level: { type: Number, required: true },
   },
   computed: {
-    headingClass() {
+    className() {
       return 'heading--' + this.level
     },
     tagName() {
