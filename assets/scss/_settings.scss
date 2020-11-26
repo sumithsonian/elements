@@ -7,9 +7,9 @@
 // 幅
 $xsmall: 320px;
 $small: 640px;
-$medium: 768px;
-$large: 1024px;
-$xlarge: 1280px;
+$medium: 960px;
+$large: 1280px;
+$xlarge: 1960px;
 
 // fontSize
 $fontXXS: 10px;
@@ -30,9 +30,9 @@ $spaceXL: 40px;
 $spaceXXL: 64px;
 
 // size
-$sizeS: 24px;
+$sizeS: 32px;
 $size: 48px;
-$sizeL: 96px;
+$sizeL: 80px;
 
 // line-height
 $lineHeightXS: 1.2;
@@ -41,8 +41,8 @@ $lineHeight: 1.6;
 $lineHeightL: 1.8;
 
 // 角丸
-$radius: 8px;
 $radiusS: 4px;
+$radius: 8px;
 
 // color
 $colorAccent: #f2a100;
@@ -103,12 +103,13 @@ $colorHatena: #00a4de;
 }
 
 // ドロップシャドウ
-@mixin shadow {
-  box-shadow: 0 $spaceXS $space rgba(0, 0, 0, 0.4);
-}
 @mixin shadowS {
   box-shadow: 0 $spaceXS $spaceS rgba(0, 0, 0, 0.2);
 }
+@mixin shadow {
+  box-shadow: 0 $spaceXS $space rgba(0, 0, 0, 0.4);
+}
+
 // オーバーレイ
 @mixin overlay {
   position: fixed;
