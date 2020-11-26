@@ -1,16 +1,23 @@
 <template>
   <div class="imgWTxt">
     <div class="imgWTxt__img">
-      <slot name="img" />
+      <ElementsImg :src="src" :alt="alt" />
     </div>
     <div class="imgWTxt__txt">
-      <slot name="txt" class="imgWTxt__txt" />
+      <ElementsTxt>
+        <slot class="imgWTxt__txt" />
+      </ElementsTxt>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    src: { type: String, required: true },
+    alt: { type: String, required: false, default: 'img' },
+  },
+}
 </script>
 
 <style scoped lang="scss">
