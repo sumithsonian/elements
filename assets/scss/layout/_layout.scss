@@ -9,9 +9,36 @@ body {
 .platform {
   min-width: 320px;
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
-  justify-content: space-between;
+
+  &__header {
+    max-width: 240px;
+    background: #f00;
+  }
+  &__contents {
+    background: #0f0;
+    flex-grow: 1;
+  }
+  &__bottomNav {
+    background: #f00;
+    display: none;
+    position: sticky;
+    bottom: 0;
+  }
+  @include bp(medium) {
+    &__header {
+      max-width: 64px;
+    }
+  }
+  @include bp(small) {
+    flex-direction: column;
+    &__header {
+      max-width: none;
+    }
+    &__bottomNav {
+      display: block;
+    }
+  }
 }
 
 /* container */
